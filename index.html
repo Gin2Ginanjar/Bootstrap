@@ -1,17 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
   </head>
   <body>
     <!-- ===========Navbar Start============ -->
     <main>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Offcanvas navbar large">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><b class="judul">TOKO VUE</b></a>
+          <a class="navbar-brand" href="#">Lingga<b class="link-danger">Mandala</b></a>
 
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
             <span class="navbar-toggler-icon"></span>
@@ -24,23 +24,35 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link link-danger text-underline-hover active" aria-current="page" href="#"><b>Home</b></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link link-danger" href="#"><b>Profil</b></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link link-danger active" aria-current="page" href="#"><b> Home </b></a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Dropdown </a>
+                  <a class="nav-link link-danger dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b> Profil </b></a>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
+                    <li><a class="dropdown-item" href="#">Sejarah</a></li>
+                    <li><a class="dropdown-item" href="#">Visi Misi</a></li>
+                    <li><a class="dropdown-item" href="#">Struktur Organisasi</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-danger" href="#"><b> Kegiatan </b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-danger" href="#"><b> Donasi </b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-danger" href="#"><b> Kerja Sama </b></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link link-danger dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b> Laporan </b></a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Keuangan</a></li>
+                    <li><a class="dropdown-item" href="#">Surat-surat</a></li>
+                    <li><a class="dropdown-item" href="#">Anggota</a></li>
+                    <!-- <li>
                       <hr class="dropdown-divider" />
                     </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li> -->
                   </ul>
                 </li>
               </ul>
@@ -54,7 +66,26 @@
       </nav>
     </main>
     <!-- ===============Navbar End================= -->
-      
+    <header class="py-1 mb-3 border-bottom">
+      <div class="container-fluid d-grid gap-1 justify-content-end">
+        <div class="dropdown"></div>
+
+        <div class="flex-shrink-0 dropdown">
+          <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <button type="button" class="btn btn-outline-danger">Login</button>
+            <img src="https://github.com/mdo.png" alt="Anggota" width="32" height="32" class="rounded-circle" />
+          </a>
+          <ul class="dropdown-menu text-small shadow">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Chatting</a></li>
+            <li><a class="dropdown-item" href="#">Administrator</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Log out</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
 </html>
